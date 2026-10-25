@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - files/
+     
 
 website:
   title: "Francisco Gallardo Ampuero"

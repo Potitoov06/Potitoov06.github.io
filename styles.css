@@ -1,0 +1,21 @@
+/* Comfortable reading width */
+main.content { max-width: 46rem; }
+
+/* Quarto puts class "theorem" on every numbered environment
+   (theorem, lemma, proposition, corollary, conjecture, definition, example, exercise),
+   plus a second class naming the type, e.g. class="theorem definition". */
+.theorem { margin: 1.2em 0; }
+
+/* AMS "plain" style: italic statement for theorem/lemma/proposition/corollary/conjecture */
+.theorem:not(.definition):not(.example):not(.exercise) p { font-style: italic; }
+.theorem .theorem-title { font-style: normal; }
+
+/* Proofs and remarks (Quarto gives remarks class="proof remark") */
+.proof { margin: 0.8em 0 1.2em 0; }
+.proof .proof-title { font-style: italic; }
+
+/* End-of-proof mark: proofs only, not remarks or solutions */
+.proof:not(.remark):not(.solution) > p:last-child::after { content: "∎"; float: right; }
+
+/* Listing on the Writing page: keep it plain */
+.quarto-listing-default .listing-description { display: none; }

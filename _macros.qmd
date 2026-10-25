@@ -1,0 +1,24 @@
+<!--
+  Shared LaTeX macros. Every page that uses math includes this file
+  (see the "include" line near the top of each post).
+  Add your own \newcommand lines below. (\DeclareMathOperator is NOT supported;
+  use \newcommand{\Foo}{\operatorname{Foo}} instead.)
+-->
+
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\Proj}{\operatorname{Proj}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\uHom}{\underline{\operatorname{Hom}}}
+\newcommand{\Ext}{\operatorname{Ext}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Pic}{\operatorname{Pic}}
+\newcommand{\coker}{\operatorname{coker}}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\bZ}{\mathbb{Z}}
+\newcommand{\bQ}{\mathbb{Q}}
+\newcommand{\bF}{\mathbb{F}}
+\newcommand{\Ga}{\mathbb{G}_{\mathrm{a}}}
+\newcommand{\Gm}{\mathbb{G}_{\mathrm{m}}}
+\newcommand{\fppf}{\mathrm{fppf}}

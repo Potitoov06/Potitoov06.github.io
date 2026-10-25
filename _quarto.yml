@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Francisco Gallardo Ampuero"
+  site-url: "https://potitoov06.github.io"   # replace USERNAME with your GitHub username
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: writing.qmd
+        text: Writing
+      - href: notes.qmd
+        text: Notes
+      - href: talks.qmd
+        text: Talks
+      - href: teaching.qmd
+        text: Teaching
+  page-footer:
+    center: "© 2026 Francisco Gallardo Ampuero"
+
+format:
+  html:
+    theme: [cosmo, theme.scss]
+    css: styles.css
+    html-math-method: mathjax
+    toc: false
+    smooth-scroll: true
+    link-external-newwindow: true
+
+# Labels used in cross-references (@thm-foo renders as "Theorem 1", etc.)
+crossref:
+  thm-title: "Theorem"
+  lem-title: "Lemma"
+  prp-title: "Proposition"
+  cor-title: "Corollary"
+  def-title: "Definition"
+  exm-title: "Example"

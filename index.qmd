@@ -1,0 +1,17 @@
+---
+title: "Francisco Gallardo Ampuero"
+---
+
+I am a second-year PhD student in the [Department of Mathematics](https://www.math.uga.edu/) at the University of Georgia, advised by Siddharth Mathur.
+
+**Email:** potitov06 [at] uga [dot] edu
+
+<!-- Uncomment when you add your CV as files/cv.pdf
+**CV:** [PDF](files/cv.pdf)
+-->
+
+<!-- Research interests: fill in when ready.
+## Research interests
+-->
+
+This site is mainly a place for my [writing](writing.qmd): reflections, and mathematics both formal and informal.

@@ -1,0 +1,37 @@
+---
+title: "Example: Cartier duality (formal post)"
+subtitle: "A sample post showing theorem environments, proofs and cross-references. Delete or replace it."
+date: 2026-10-24
+categories: [math, formal]
+---
+
+{{< include /_macros.qmd >}}
+
+Throughout, $S$ is a scheme and all group schemes are commutative.
+
+::: {#def-cartier-dual}
+## Cartier dual
+Let $G$ be a commutative $S$-group scheme. Its *Cartier dual* is the fppf sheaf of groups on $(\mathrm{Sch}/S)$
+$$
+G^D := \uHom_{S\text{-gr}}(G, \Gm), \qquad T \longmapsto \Hom_{T\text{-gr}}(G_T, \Gm{}_{,T}).
+$$
+:::
+
+::: {#thm-cartier}
+## Cartier duality
+Let $G$ be a finite locally free commutative $S$-group scheme. Then $G^D$ is representable by a finite locally free commutative $S$-group scheme, of the same rank as $G$, and the evaluation pairing $G \times_S G^D \to \Gm$ induces an isomorphism $G \xrightarrow{\sim} (G^D)^D$.
+:::
+
+::: {.proof}
+We only sketch the argument. The question is local on $S$, so take $S = \Spec R$ and $G = \Spec A$ with $A$ a finite projective $R$-module carrying a commutative and cocommutative Hopf algebra structure. Group homomorphisms $G_T \to \Gm{}_{,T}$ correspond to grouplike elements of $A \otimes_R \cO(T)$, which in turn correspond to $R$-algebra maps $A^\vee \to \cO(T)$, where $A^\vee = \Hom_R(A,R)$ carries the dual Hopf algebra structure. Hence $G^D = \Spec A^\vee$, and $A \to A^{\vee\vee}$ is an isomorphism because $A$ is finite projective.
+:::
+
+::: {#exm-mu-n}
+For $n \geq 1$ we have $(\bZ/n\bZ)_S^D \cong \mu_{n,S}$: a homomorphism $\bZ/n\bZ \to \Gm{}_{,T}$ is determined by the image $u \in \cO(T)^\times$ of $1$, subject only to $u^n = 1$. By @thm-cartier, also $\mu_{n,S}^D \cong (\bZ/n\bZ)_S$.
+:::
+
+::: {.remark}
+Over $S = \Spec \bF_p$, the group $\mu_p$ is infinitesimal while its dual $\bZ/p\bZ$ is étale; so, unlike rank, connectedness is not preserved by duality.
+:::
+
+Cross-references work as in LaTeX: @def-cartier-dual, @thm-cartier, @exm-mu-n.

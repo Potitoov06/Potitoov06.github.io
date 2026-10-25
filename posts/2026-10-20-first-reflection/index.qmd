@@ -1,0 +1,17 @@
+---
+title: "Example: an informal post"
+subtitle: "A sample reflection: plain prose with occasional math. Delete or replace it."
+date: 2026-10-20
+categories: [reflection]
+---
+
+{{< include /_macros.qmd >}}
+
+Informal posts are just prose. You can still write inline math like $\Spec \bZ$ or $\mu_p \subset \Gm$, and display math:
+$$
+0 \to \mu_p \to \Gm \xrightarrow{\;p\;} \Gm \to 0 \quad \text{(exact on the fppf site)}.
+$$
+
+*Italics*, **bold**, lists, links and footnotes[^1] all work as usual.
+
+[^1]: Like this one.

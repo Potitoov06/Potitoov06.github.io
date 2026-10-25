@@ -1,0 +1,10 @@
+---
+title: "Talks"
+---
+
+<!--
+Format suggestion (newest first):
+- *Title of the talk.* Seminar name, University of Georgia, October 2026. [Notes](files/talk-notes.pdf)
+-->
+
+*Nothing here yet.*

@@ -1,0 +1,12 @@
+---
+title: "Notes"
+---
+
+Expository notes. Use with caution; corrections are welcome.
+
+<!--
+To add a PDF: put it in the files/ folder and add a line like
+- *Title of the notes.* [PDF](files/my-notes.pdf) (October 2026)
+-->
+
+*Nothing here yet.*

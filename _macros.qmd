@@ -16,9 +16,9 @@
 \newcommand{\id}{\operatorname{id}}
 \newcommand{\cO}{\mathcal{O}}
 \newcommand{\cF}{\mathcal{F}}
-\newcommand{\bZ}{\mathbb{Z}}
-\newcommand{\bQ}{\mathbb{Q}}
-\newcommand{\bF}{\mathbb{F}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\F}{\mathbb{F}}
 \newcommand{\Ga}{\mathbb{G}_{\mathrm{a}}}
 \newcommand{\Gm}{\mathbb{G}_{\mathrm{m}}}
 \newcommand{\fppf}{\mathrm{fppf}}

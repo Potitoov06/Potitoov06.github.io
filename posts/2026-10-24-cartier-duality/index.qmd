@@ -1,5 +1,5 @@
 ---
-title: "Example: Cartier duality (formal post)"
+title: "Line bundles"
 subtitle: "A sample post showing theorem environments, proofs and cross-references. Delete or replace it."
 date: 2026-10-24
 categories: [math, formal]
@@ -8,6 +8,11 @@ categories: [math, formal]
 {{< include /_macros.qmd >}}
 
 Throughout, $S$ is a scheme and all group schemes are commutative.
+
+::: {#def-line-bundle}
+## Line bundle
+Let $X$ be a scheme. A *line bundle* on $X$ is a locally free sheaf of rank 1 on $X$, i.e. a quasi-coherent $\cO_X$-module $\cL$ such that for every $x \in X$ there exists an open neighborhood $U \subseteq X$ of $x$ such that $\cL|_U \cong \cO_U$. The set of isomorphism classes of line bundles on $X$ forms a group under tensor product, called the *Picard group* of $X$, denoted $\Pic(X)$.
+:::
 
 ::: {#def-cartier-dual}
 ## Cartier dual

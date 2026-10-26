@@ -6,7 +6,7 @@ I am a second-year PhD student in the [Department of Mathematics](https://www.ma
 
 **Email:** potitov06 [at] uga [dot] edu
 
-**CV:** [PDF](files/cv.pdf)
+**CV:** [CV](files/cv.pdf)
 
 <!-- Research interests: fill in when ready.
 ## Research interests

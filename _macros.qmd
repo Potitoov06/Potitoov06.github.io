@@ -1,24 +1,129 @@
 <!--
-  Shared LaTeX macros. Every page that uses math includes this file
-  (see the "include" line near the top of each post).
-  Add your own \newcommand lines below. (\DeclareMathOperator is NOT supported;
-  use \newcommand{\Foo}{\operatorname{Foo}} instead.)
+  Macros converted from Francisco's TeXstudio preamble.
+  Rules for this file:
+  - No % comments: in Markdown they show up as visible text. Use HTML comments like this one.
+  - \DeclareMathOperator is converted to \operatorname here (see the notes in the chat).
 -->
 
-\newcommand{\Spec}{\operatorname{Spec}}
+<!-- Bolds -->
+\newcommand{\E}{\exists~\!}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\G}{\mathbb{G}}
+\renewcommand{\P}{\mathbb{P}}
+
+<!-- Commutative algebra and group theory -->
+\newcommand{\p}{\mathfrak{p}}
+\renewcommand{\q}{\mathfrak{q}}
+\renewcommand{\a}{\mathfrak{a}}
+\newcommand{\m}{\mathfrak{m}}
+\newcommand{\lth}[1]{\text{length}_{#1}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\gal}{\operatorname{Gal}}
+\newcommand{\rad}{\operatorname{rad}}
+\newcommand{\nil}{\operatorname{Nil}}
+\newcommand{\zz}[1]{\mathbb{Z}/#1\mathbb{Z}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\inv}{\operatorname{inv}}
+\newcommand{\car}{\operatorname{char}}
+\newcommand{\ann}{\operatorname{Ann}}
+\newcommand{\rk}{\operatorname{rk}}
+\newcommand{\ff}{\operatorname{Frac}}
+\newcommand{\Der}{\operatorname{Der}}
+\newcommand{\heit}{\operatorname{ht}}
+\newcommand{\trdeg}{\operatorname{trdeg}}
+\newcommand{\ps}[1]{[\![ #1 ]\!]}
+
+<!-- Homological algebra and categories -->
+\newcommand{\id}{\text{id}}
+\renewcommand{\hom}{\text{Hom}}
+\newcommand{\nd}{\text{End}}
+\newcommand{\aut}{\operatorname{Aut}}
+\renewcommand{\c}[1]{\mathcal{#1}}
+\newcommand{\cat}[1]{\textsf{#1}}
+\newcommand{\Mod}[1]{\text{Mod}_{#1}}
+\renewcommand{\k}[1]{#1^{\bullet}}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\coker}{\operatorname{coker}}
+\newcommand{\nat}{\operatorname{Nat}}
+\newcommand{\pr}{\operatorname{pr}}
+\newcommand{\kom}{\operatorname{Kom}}
+\newcommand{\obj}{\operatorname{Obj}}
+\newcommand{\mor}{\operatorname{Mor}}
+\newcommand{\ext}{\operatorname{Ext}}
+\newcommand{\tor}{\operatorname{Tor}}
+\newcommand{\colim}{\operatorname{colim}}
+\newcommand{\Eq}{\operatorname{Eq}}
+
+<!-- Exact sequences -->
+\newcommand{\ex}[5]{0\longrightarrow #1\overset{#4}{\longrightarrow} #2\overset{#5}{\longrightarrow} #3\longrightarrow 0}
+\newcommand{\ftex}[5]{0\rightarrow #1\rightarrow #2\rightarrow #3\rightarrow #4\rightarrow #5}
+\newcommand{\lex}[5]{0\longrightarrow #1\overset{#4}{\longrightarrow}  #2\overset{#5}{\longrightarrow} #3}
+\newcommand{\rex}[5]{ #1\overset{#4}{\longrightarrow} #2\overset{#5}{\longrightarrow} #3\longrightarrow 0}
+\newcommand{\exl}[5]{\cdots\longrightarrow #1\overset{#4}{\longrightarrow} #2\overset{#5}{\longrightarrow} #3\longrightarrow \cdots}
+\newcommand{\lrex}[5]{ #1\overset{#4}{\longrightarrow} #2\overset{#5}{\longrightarrow} #3}
+\newcommand{\resol}[5]{0\longrightarrow #1\overset{#4}{\longrightarrow} #2\overset{#5}{\longrightarrow} #3\longrightarrow \cdots}
+
+<!-- Scheme theory -->
+\newcommand{\ox}[1]{\mathcal{O}_{#1}}
+\newcommand{\sh}[1]{\mathscr{#1}}
+\newcommand{\spec}{\operatorname{Spec}}
 \newcommand{\Proj}{\operatorname{Proj}}
-\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\codim}{\operatorname{codim}}
+\newcommand{\an}[1]{#1^{\text{an}}}
+\newcommand{\Pic}{\operatorname{Pic}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\newcommand{\Div}{\operatorname{Div}}
+\newcommand{\PDiv}{\operatorname{PDiv}}
+\newcommand{\Coh}{\operatorname{Coh}}
+\newcommand{\Supp}{\operatorname{Supp}}
+\newcommand{\divi}{\operatorname{div}}
+\newcommand{\ord}{\operatorname{ord}}
+\newcommand{\Br}{\operatorname{Br}}
+\newcommand{\Const}{\operatorname{Const}}
+\newcommand{\Hom}{\operatorname{\mathscr{H}\!\mathit{om}}}
+\newcommand{\Qcoh}{\operatorname{Qcoh}}
+
+<!-- Cohomology on sites -->
+\newcommand{\fppf}[3]{H^{#3}_{\text{fppf}}(#1,#2)}
+\newcommand{\et}[3]{H^{#3}_{\text{ét}}(#1,#2)}
+\newcommand{\zar}[3]{H^{#3}_{\text{Zar}}(#1,#2)}
+\newcommand{\cech}[2]{\check{H}^{#2}(\mathcal{U},#1)}
+\newcommand{\Sch}[1]{(\text{Sch}/#1)^{\text{op}}}
+\newcommand{\fsh}[1]{\widetilde{#1}_{\text{pl}}}
+\renewcommand{\H}{\mathscr{H}}
+
+<!-- Others -->
+\newcommand{\ds}{\displaystyle}
+\newcommand{\pp}[1]{\left(#1\right)}
+\newcommand{\Tau}{\large\tau}
+\newcommand{\np}[2]{\langle #1|#2\rangle}
+\newcommand{\fl}[1]{\left\lfloor #1\right\rfloor}
+\newcommand{\cyc}[1]{\langle #1 \rangle}
+\newcommand{\ev}{\operatorname{ev}}
+
+<!-- Geometry -->
+\newcommand{\Top}{\operatorname{Man}}
+\newcommand{\Sm}{\operatorname{Sm}_{\mathbb{R}}}
+\newcommand{\Com}{\operatorname{Sm}_{\mathbb{C}}}
+
+<!-- Number theory -->
+\newcommand{\ft}[1]{#1^{(p)}}
+
+<!-- Kept from the original site macros (no clash with the above) -->
+\newcommand{\Spec}{\operatorname{Spec}}
 \newcommand{\uHom}{\underline{\operatorname{Hom}}}
 \newcommand{\Ext}{\operatorname{Ext}}
 \newcommand{\Gal}{\operatorname{Gal}}
-\newcommand{\Pic}{\operatorname{Pic}}
-\newcommand{\coker}{\operatorname{coker}}
-\newcommand{\id}{\operatorname{id}}
 \newcommand{\cO}{\mathcal{O}}
 \newcommand{\cF}{\mathcal{F}}
-\newcommand{\Z}{\mathbb{Z}}
-\newcommand{\Q}{\mathbb{Q}}
-\newcommand{\F}{\mathbb{F}}
+\newcommand{\bZ}{\mathbb{Z}}
+\newcommand{\bQ}{\mathbb{Q}}
+\newcommand{\bF}{\mathbb{F}}
 \newcommand{\Ga}{\mathbb{G}_{\mathrm{a}}}
 \newcommand{\Gm}{\mathbb{G}_{\mathrm{m}}}
-\newcommand{\fppf}{\mathrm{fppf}}

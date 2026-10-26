@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2026-10-24">
 
-<title>Example: Cartier duality (formal post) – Francisco Gallardo Ampuero</title>
+<title>Line bundles – Francisco Gallardo Ampuero</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -163,7 +163,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Example: Cartier duality (formal post)</h1>
+<h1 class="title">Line bundles</h1>
 <p class="subtitle lead">A sample post showing theorem environments, proofs and cross-references. Delete or replace it.</p>
   <div class="quarto-categories">
     <div class="quarto-category">math</div>
@@ -192,30 +192,43 @@ window.Quarto = {
 
 
 <!--
-  Shared LaTeX macros. Every page that uses math includes this file
-  (see the "include" line near the top of each post).
-  Add your own \newcommand lines below. (\DeclareMathOperator is NOT supported;
-  use \newcommand{\Foo}{\operatorname{Foo}} instead.)
+  Macros converted from Francisco's TeXstudio preamble.
+  Rules for this file:
+  - No % comments: in Markdown they show up as visible text. Use HTML comments like this one.
+  - \DeclareMathOperator is converted to \operatorname here (see the notes in the chat).
 -->
+<!-- Bolds -->
+<!-- Commutative algebra and group theory -->
+<!-- Homological algebra and categories -->
+<!-- Exact sequences -->
+<!-- Scheme theory -->
+<!-- Cohomology on sites -->
+<!-- Others -->
+<!-- Geometry -->
+<!-- Number theory -->
+<!-- Kept from the original site macros (no clash with the above) -->
 <p>Throughout, <span class="math inline">\(S\)</span> is a scheme and all group schemes are commutative.</p>
+<div id="def-line-bundle" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 1 (Line bundle)</strong></span> Let <span class="math inline">\(X\)</span> be a scheme. A <em>line bundle</em> on <span class="math inline">\(X\)</span> is a locally free sheaf of rank 1 on <span class="math inline">\(X\)</span>, i.e.&nbsp;a quasi-coherent <span class="math inline">\(\mathcal{O}_X\)</span>-module <span class="math inline">\(\cL\)</span> such that for every <span class="math inline">\(x \in X\)</span> there exists an open neighborhood <span class="math inline">\(U \subseteq X\)</span> of <span class="math inline">\(x\)</span> such that <span class="math inline">\(\cL|_U \cong \mathcal{O}_U\)</span>. The set of isomorphism classes of line bundles on <span class="math inline">\(X\)</span> forms a group under tensor product, called the <em>Picard group</em> of <span class="math inline">\(X\)</span>, denoted <span class="math inline">\(\operatorname{Pic}(X)\)</span>.</p>
+</div>
 <div id="def-cartier-dual" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 1 (Cartier dual)</strong></span> Let <span class="math inline">\(G\)</span> be a commutative <span class="math inline">\(S\)</span>-group scheme. Its <em>Cartier dual</em> is the fppf sheaf of groups on <span class="math inline">\((\mathrm{Sch}/S)\)</span> <span class="math display">\[
-G^D := \underline{\operatorname{Hom}}_{S\text{-gr}}(G, \mathbb{G}_{\mathrm{m}}), \qquad T \longmapsto \operatorname{Hom}_{T\text{-gr}}(G_T, \mathbb{G}_{\mathrm{m}}{}_{,T}).
+<p><span class="theorem-title"><strong>Definition 2 (Cartier dual)</strong></span> Let <span class="math inline">\(G\)</span> be a commutative <span class="math inline">\(S\)</span>-group scheme. Its <em>Cartier dual</em> is the fppf sheaf of groups on <span class="math inline">\((\mathrm{Sch}/S)\)</span> <span class="math display">\[
+G^D := \underline{\operatorname{Hom}}_{S\text{-gr}}(G, \mathbb{G}_{\mathrm{m}}), \qquad T \longmapsto \operatorname{\mathscr{H}\!\mathit{om}}_{T\text{-gr}}(G_T, \mathbb{G}_{\mathrm{m}}{}_{,T}).
 \]</span></p>
 </div>
 <div id="thm-cartier" class="theorem">
 <p><span class="theorem-title"><strong>Theorem 1 (Cartier duality)</strong></span> Let <span class="math inline">\(G\)</span> be a finite locally free commutative <span class="math inline">\(S\)</span>-group scheme. Then <span class="math inline">\(G^D\)</span> is representable by a finite locally free commutative <span class="math inline">\(S\)</span>-group scheme, of the same rank as <span class="math inline">\(G\)</span>, and the evaluation pairing <span class="math inline">\(G \times_S G^D \to \mathbb{G}_{\mathrm{m}}\)</span> induces an isomorphism <span class="math inline">\(G \xrightarrow{\sim} (G^D)^D\)</span>.</p>
 </div>
 <div class="proof">
-<p><span class="proof-title"><em>Proof</em>. </span>We only sketch the argument. The question is local on <span class="math inline">\(S\)</span>, so take <span class="math inline">\(S = \operatorname{Spec}R\)</span> and <span class="math inline">\(G = \operatorname{Spec}A\)</span> with <span class="math inline">\(A\)</span> a finite projective <span class="math inline">\(R\)</span>-module carrying a commutative and cocommutative Hopf algebra structure. Group homomorphisms <span class="math inline">\(G_T \to \mathbb{G}_{\mathrm{m}}{}_{,T}\)</span> correspond to grouplike elements of <span class="math inline">\(A \otimes_R \mathcal{O}(T)\)</span>, which in turn correspond to <span class="math inline">\(R\)</span>-algebra maps <span class="math inline">\(A^\vee \to \mathcal{O}(T)\)</span>, where <span class="math inline">\(A^\vee = \operatorname{Hom}_R(A,R)\)</span> carries the dual Hopf algebra structure. Hence <span class="math inline">\(G^D = \operatorname{Spec}A^\vee\)</span>, and <span class="math inline">\(A \to A^{\vee\vee}\)</span> is an isomorphism because <span class="math inline">\(A\)</span> is finite projective.</p>
+<p><span class="proof-title"><em>Proof</em>. </span>We only sketch the argument. The question is local on <span class="math inline">\(S\)</span>, so take <span class="math inline">\(S = \operatorname{Spec}R\)</span> and <span class="math inline">\(G = \operatorname{Spec}A\)</span> with <span class="math inline">\(A\)</span> a finite projective <span class="math inline">\(R\)</span>-module carrying a commutative and cocommutative Hopf algebra structure. Group homomorphisms <span class="math inline">\(G_T \to \mathbb{G}_{\mathrm{m}}{}_{,T}\)</span> correspond to grouplike elements of <span class="math inline">\(A \otimes_R \mathcal{O}(T)\)</span>, which in turn correspond to <span class="math inline">\(R\)</span>-algebra maps <span class="math inline">\(A^\vee \to \mathcal{O}(T)\)</span>, where <span class="math inline">\(A^\vee = \operatorname{\mathscr{H}\!\mathit{om}}_R(A,R)\)</span> carries the dual Hopf algebra structure. Hence <span class="math inline">\(G^D = \operatorname{Spec}A^\vee\)</span>, and <span class="math inline">\(A \to A^{\vee\vee}\)</span> is an isomorphism because <span class="math inline">\(A\)</span> is finite projective.</p>
 </div>
 <div id="exm-mu-n" class="theorem example">
-<p><span class="theorem-title"><strong>Example 1</strong></span> For <span class="math inline">\(n \geq 1\)</span> we have <span class="math inline">\((\bZ/n\bZ)_S^D \cong \mu_{n,S}\)</span>: a homomorphism <span class="math inline">\(\bZ/n\bZ \to \mathbb{G}_{\mathrm{m}}{}_{,T}\)</span> is determined by the image <span class="math inline">\(u \in \mathcal{O}(T)^\times\)</span> of <span class="math inline">\(1\)</span>, subject only to <span class="math inline">\(u^n = 1\)</span>. By <a href="#thm-cartier" class="quarto-xref">Theorem&nbsp;1</a>, also <span class="math inline">\(\mu_{n,S}^D \cong (\bZ/n\bZ)_S\)</span>.</p>
+<p><span class="theorem-title"><strong>Example 1</strong></span> For <span class="math inline">\(n \geq 1\)</span> we have <span class="math inline">\((\mathbb{Z}/n\mathbb{Z})_S^D \cong \mu_{n,S}\)</span>: a homomorphism <span class="math inline">\(\mathbb{Z}/n\mathbb{Z}\to \mathbb{G}_{\mathrm{m}}{}_{,T}\)</span> is determined by the image <span class="math inline">\(u \in \mathcal{O}(T)^\times\)</span> of <span class="math inline">\(1\)</span>, subject only to <span class="math inline">\(u^n = 1\)</span>. By <a href="#thm-cartier" class="quarto-xref">Theorem&nbsp;1</a>, also <span class="math inline">\(\mu_{n,S}^D \cong (\mathbb{Z}/n\mathbb{Z})_S\)</span>.</p>
 </div>
 <div class="proof remark">
-<p><span class="proof-title"><em>Remark</em>. </span>Over <span class="math inline">\(S = \operatorname{Spec}\bF_p\)</span>, the group <span class="math inline">\(\mu_p\)</span> is infinitesimal while its dual <span class="math inline">\(\bZ/p\bZ\)</span> is étale; so, unlike rank, connectedness is not preserved by duality.</p>
+<p><span class="proof-title"><em>Remark</em>. </span>Over <span class="math inline">\(S = \operatorname{Spec}\mathbb{F}_p\)</span>, the group <span class="math inline">\(\mu_p\)</span> is infinitesimal while its dual <span class="math inline">\(\mathbb{Z}/p\mathbb{Z}\)</span> is étale; so, unlike rank, connectedness is not preserved by duality.</p>
 </div>
-<p>Cross-references work as in LaTeX: <a href="#def-cartier-dual" class="quarto-xref">Definition&nbsp;1</a>, <a href="#thm-cartier" class="quarto-xref">Theorem&nbsp;1</a>, <a href="#exm-mu-n" class="quarto-xref">Example&nbsp;1</a>.</p>
+<p>Cross-references work as in LaTeX: <a href="#def-cartier-dual" class="quarto-xref">Definition&nbsp;2</a>, <a href="#thm-cartier" class="quarto-xref">Theorem&nbsp;1</a>, <a href="#exm-mu-n" class="quarto-xref">Example&nbsp;1</a>.</p>
 
 
 

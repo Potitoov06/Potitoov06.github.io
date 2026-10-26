@@ -191,12 +191,22 @@ window.Quarto = {
 
 
 <!--
-  Shared LaTeX macros. Every page that uses math includes this file
-  (see the "include" line near the top of each post).
-  Add your own \newcommand lines below. (\DeclareMathOperator is NOT supported;
-  use \newcommand{\Foo}{\operatorname{Foo}} instead.)
+  Macros converted from Francisco's TeXstudio preamble.
+  Rules for this file:
+  - No % comments: in Markdown they show up as visible text. Use HTML comments like this one.
+  - \DeclareMathOperator is converted to \operatorname here (see the notes in the chat).
 -->
-<p>Informal posts are just prose. You can still write inline math like <span class="math inline">\(\operatorname{Spec}\bZ\)</span> or <span class="math inline">\(\mu_p \subset \mathbb{G}_{\mathrm{m}}\)</span>, and display math: <span class="math display">\[
+<!-- Bolds -->
+<!-- Commutative algebra and group theory -->
+<!-- Homological algebra and categories -->
+<!-- Exact sequences -->
+<!-- Scheme theory -->
+<!-- Cohomology on sites -->
+<!-- Others -->
+<!-- Geometry -->
+<!-- Number theory -->
+<!-- Kept from the original site macros (no clash with the above) -->
+<p>Informal posts are just prose. You can still write inline math like <span class="math inline">\(\operatorname{Spec}\mathbb{Z}\)</span> or <span class="math inline">\(\mu_p \subset \mathbb{G}_{\mathrm{m}}\)</span>, and display math: <span class="math display">\[
 0 \to \mu_p \to \mathbb{G}_{\mathrm{m}}\xrightarrow{\;p\;} \mathbb{G}_{\mathrm{m}}\to 0 \quad \text{(exact on the fppf site)}.
 \]</span></p>
 <p><em>Italics</em>, <strong>bold</strong>, lists, links and footnotes<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> all work as usual.</p>

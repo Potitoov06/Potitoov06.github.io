@@ -4,7 +4,7 @@
     "href": "writing.html",
     "title": "Writing",
     "section": "",
-    "text": "Reflections, and mathematics both formal and informal.\n\n\n\n\n\n\n\n\n\nLine bundles\n\n\nA sample post showing theorem environments, proofs and cross-references. Delete or replace it.\n\n\n\nmath\n\nformal\n\n\n\n\n\n\nOct 24, 2026\n\n\n\n\n\n\n\nExample: an informal post\n\n\nA sample reflection: plain prose with occasional math. Delete or replace it.\n\n\n\nreflection\n\n\n\n\n\n\nOct 20, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Reflections, and mathematics both formal and informal.\n\n\n\n\n\n\n\n\n\nI-adic completions\n\n\nWe use standard material on limits to understand some basic problem about iterated completions\n\n\n\nmath\n\nformal\n\n\n\n\n\n\nOct 29, 2026\n\n\n\n\n\n\n\nLine bundles\n\n\nA sample post showing theorem environments, proofs and cross-references. Delete or replace it.\n\n\n\nmath\n\nformal\n\n\n\n\n\n\nOct 24, 2026\n\n\n\n\n\n\n\nExample: an informal post\n\n\nA sample reflection: plain prose with occasional math. Delete or replace it.\n\n\n\nreflection\n\n\n\n\n\n\nOct 20, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "talks.html",
@@ -14,18 +14,18 @@
     "text": "Nothing here yet."
   },
   {
-    "objectID": "posts/2026-10-24-cartier-duality/index.html",
-    "href": "posts/2026-10-24-cartier-duality/index.html",
-    "title": "Line bundles",
+    "objectID": "posts/2026-10-20-first-reflection/index.html",
+    "href": "posts/2026-10-20-first-reflection/index.html",
+    "title": "Example: an informal post",
     "section": "",
-    "text": "Throughout, \\(S\\) is a scheme and all group schemes are commutative.\n\nDefinition 1 (Line bundle) Let \\(X\\) be a scheme. A line bundle on \\(X\\) is a locally free sheaf of rank 1 on \\(X\\), i.e. a quasi-coherent \\(\\mathcal{O}_X\\)-module \\(\\cL\\) such that for every \\(x \\in X\\) there exists an open neighborhood \\(U \\subseteq X\\) of \\(x\\) such that \\(\\cL|_U \\cong \\mathcal{O}_U\\). The set of isomorphism classes of line bundles on \\(X\\) forms a group under tensor product, called the Picard group of \\(X\\), denoted \\(\\operatorname{Pic}(X)\\).\n\n\nDefinition 2 (Cartier dual) Let \\(G\\) be a commutative \\(S\\)-group scheme. Its Cartier dual is the fppf sheaf of groups on \\((\\mathrm{Sch}/S)\\) \\[\nG^D := \\underline{\\operatorname{Hom}}_{S\\text{-gr}}(G, \\mathbb{G}_{\\mathrm{m}}), \\qquad T \\longmapsto \\operatorname{\\mathscr{H}\\!\\mathit{om}}_{T\\text{-gr}}(G_T, \\mathbb{G}_{\\mathrm{m}}{}_{,T}).\n\\]\n\n\nTheorem 1 (Cartier duality) Let \\(G\\) be a finite locally free commutative \\(S\\)-group scheme. Then \\(G^D\\) is representable by a finite locally free commutative \\(S\\)-group scheme, of the same rank as \\(G\\), and the evaluation pairing \\(G \\times_S G^D \\to \\mathbb{G}_{\\mathrm{m}}\\) induces an isomorphism \\(G \\xrightarrow{\\sim} (G^D)^D\\).\n\n\nProof. We only sketch the argument. The question is local on \\(S\\), so take \\(S = \\operatorname{Spec}R\\) and \\(G = \\operatorname{Spec}A\\) with \\(A\\) a finite projective \\(R\\)-module carrying a commutative and cocommutative Hopf algebra structure. Group homomorphisms \\(G_T \\to \\mathbb{G}_{\\mathrm{m}}{}_{,T}\\) correspond to grouplike elements of \\(A \\otimes_R \\mathcal{O}(T)\\), which in turn correspond to \\(R\\)-algebra maps \\(A^\\vee \\to \\mathcal{O}(T)\\), where \\(A^\\vee = \\operatorname{\\mathscr{H}\\!\\mathit{om}}_R(A,R)\\) carries the dual Hopf algebra structure. Hence \\(G^D = \\operatorname{Spec}A^\\vee\\), and \\(A \\to A^{\\vee\\vee}\\) is an isomorphism because \\(A\\) is finite projective.\n\n\nExample 1 For \\(n \\geq 1\\) we have \\((\\mathbb{Z}/n\\mathbb{Z})_S^D \\cong \\mu_{n,S}\\): a homomorphism \\(\\mathbb{Z}/n\\mathbb{Z}\\to \\mathbb{G}_{\\mathrm{m}}{}_{,T}\\) is determined by the image \\(u \\in \\mathcal{O}(T)^\\times\\) of \\(1\\), subject only to \\(u^n = 1\\). By Theorem 1, also \\(\\mu_{n,S}^D \\cong (\\mathbb{Z}/n\\mathbb{Z})_S\\).\n\n\nRemark. Over \\(S = \\operatorname{Spec}\\mathbb{F}_p\\), the group \\(\\mu_p\\) is infinitesimal while its dual \\(\\mathbb{Z}/p\\mathbb{Z}\\) is étale; so, unlike rank, connectedness is not preserved by duality.\n\nCross-references work as in LaTeX: Definition 2, Theorem 1, Example 1."
+    "text": "Informal posts are just prose. You can still write inline math like \\(\\Spec \\bZ\\) or \\(\\mu_p \\subset \\mathbb{G}_{\\mathrm{m}}\\), and display math: \\[\n0 \\to \\mu_p \\to \\mathbb{G}_{\\mathrm{m}}\\xrightarrow{\\;p\\;} \\mathbb{G}_{\\mathrm{m}}\\to 0 \\quad \\text{(exact on the fppf site)}.\n\\]\nItalics, bold, lists, links and footnotes1 all work as usual."
   },
   {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Teaching",
-    "section": "",
-    "text": "Nothing here yet."
+    "objectID": "posts/2026-10-20-first-reflection/index.html#footnotes",
+    "href": "posts/2026-10-20-first-reflection/index.html#footnotes",
+    "title": "Example: an informal post",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nLike this one.↩︎"
   },
   {
     "objectID": "notes.html",
@@ -35,18 +35,25 @@
     "text": "Expository notes. Use with caution; corrections are welcome.\n\nNothing here yet."
   },
   {
-    "objectID": "posts/2026-10-20-first-reflection/index.html",
-    "href": "posts/2026-10-20-first-reflection/index.html",
-    "title": "Example: an informal post",
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
     "section": "",
-    "text": "Informal posts are just prose. You can still write inline math like \\(\\operatorname{Spec}\\mathbb{Z}\\) or \\(\\mu_p \\subset \\mathbb{G}_{\\mathrm{m}}\\), and display math: \\[\n0 \\to \\mu_p \\to \\mathbb{G}_{\\mathrm{m}}\\xrightarrow{\\;p\\;} \\mathbb{G}_{\\mathrm{m}}\\to 0 \\quad \\text{(exact on the fppf site)}.\n\\]\nItalics, bold, lists, links and footnotes1 all work as usual."
+    "text": "Nothing here yet."
   },
   {
-    "objectID": "posts/2026-10-20-first-reflection/index.html#footnotes",
-    "href": "posts/2026-10-20-first-reflection/index.html#footnotes",
-    "title": "Example: an informal post",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nLike this one.↩︎"
+    "objectID": "posts/2026-10-24-line-bundles/index.html",
+    "href": "posts/2026-10-24-line-bundles/index.html",
+    "title": "Line bundles",
+    "section": "",
+    "text": "Throughout, \\(S\\) is a scheme and all group schemes are commutative.\n\nDefinition 1 (Line bundle) Let \\(X\\) be a scheme. A line bundle on \\(X\\) is a locally free sheaf of rank 1 on \\(X\\), i.e. a quasi-coherent \\(\\cO_X\\)-module \\(\\cL\\) such that for every \\(x \\in X\\) there exists an open neighborhood \\(U \\subseteq X\\) of \\(x\\) such that \\(\\cL|_U \\cong \\cO_U\\). The set of isomorphism classes of line bundles on \\(X\\) forms a group under tensor product, called the Picard group of \\(X\\), denoted \\(\\operatorname{Pic}(X)\\).\n\n\nDefinition 2 (Cartier dual) Let \\(G\\) be a commutative \\(S\\)-group scheme. Its Cartier dual is the fppf sheaf of groups on \\((\\mathrm{Sch}/S)\\) \\[\nG^D := \\underline{\\operatorname{Hom}}_{S\\text{-gr}}(G, \\mathbb{G}_{\\mathrm{m}}), \\qquad T \\longmapsto \\operatorname{\\mathscr{H}\\!\\mathit{om}}_{T\\text{-gr}}(G_T, \\mathbb{G}_{\\mathrm{m}}{}_{,T}).\n\\]\n\n\nTheorem 1 (Cartier duality) Let \\(G\\) be a finite locally free commutative \\(S\\)-group scheme. Then \\(G^D\\) is representable by a finite locally free commutative \\(S\\)-group scheme, of the same rank as \\(G\\), and the evaluation pairing \\(G \\times_S G^D \\to \\mathbb{G}_{\\mathrm{m}}\\) induces an isomorphism \\(G \\xrightarrow{\\sim} (G^D)^D\\).\n\n\nProof. We only sketch the argument. The question is local on \\(S\\), so take \\(S = \\operatorname{Spec}R\\) and \\(G = \\Spec A\\) with \\(A\\) a finite projective \\(R\\)-module carrying a commutative and cocommutative Hopf algebra structure. Group homomorphisms \\(G_T \\to \\mathbb{G}_{\\mathrm{m}}{}_{,T}\\) correspond to grouplike elements of \\(A \\otimes_R \\cO(T)\\), which in turn correspond to \\(R\\)-algebra maps \\(A^\\vee \\to \\cO(T)\\), where \\(A^\\vee = \\operatorname{\\mathscr{H}\\!\\mathit{om}}_R(A,R)\\) carries the dual Hopf algebra structure. Hence \\(G^D = \\Spec A^\\vee\\), and \\(A \\to A^{\\vee\\vee}\\) is an isomorphism because \\(A\\) is finite projective.\n\n\nExample 1 For \\(n \\geq 1\\) we have \\((\\bZ/n\\bZ)_S^D \\cong \\mu_{n,S}\\): a homomorphism \\(\\bZ/n\\bZ \\to \\mathbb{G}_{\\mathrm{m}}{}_{,T}\\) is determined by the image \\(u \\in \\cO(T)^\\times\\) of \\(1\\), subject only to \\(u^n = 1\\). By Theorem 1, also \\(\\mu_{n,S}^D \\cong (\\bZ/n\\bZ)_S\\).\n\n\nRemark. Over \\(S = \\Spec \\bF_p\\), the group \\(\\mu_p\\) is infinitesimal while its dual \\(\\bZ/p\\bZ\\) is étale; so, unlike rank, connectedness is not preserved by duality.\n\nCross-references work as in LaTeX: Definition 2, Theorem 1, Example 1."
+  },
+  {
+    "objectID": "posts/2026-10-29-limits/index.html",
+    "href": "posts/2026-10-29-limits/index.html",
+    "title": "I-adic completions",
+    "section": "",
+    "text": "We want to answer the following question: If \\(R\\) is any ring and \\(I=(f_1,\\ldots, f_m)\\) is a finitely generated ideal in \\(R\\), then is the \\(I\\)-adic completion of \\(R\\) the \\(f_m\\)-adic completion of \\((f_1,\\ldots,f_{m-1})\\)-adic completion of \\(R\\)?"
   },
   {
     "objectID": "index.html",

@@ -28,7 +28,7 @@ Let $G$ be a finite locally free commutative $S$-group scheme. Then $G^D$ is rep
 :::
 
 ::: {.proof}
-We only sketch the argument. The question is local on $S$, so take $S = \Spec R$ and $G = \Spec A$ with $A$ a finite projective $R$-module carrying a commutative and cocommutative Hopf algebra structure. Group homomorphisms $G_T \to \Gm{}_{,T}$ correspond to grouplike elements of $A \otimes_R \cO(T)$, which in turn correspond to $R$-algebra maps $A^\vee \to \cO(T)$, where $A^\vee = \Hom_R(A,R)$ carries the dual Hopf algebra structure. Hence $G^D = \Spec A^\vee$, and $A \to A^{\vee\vee}$ is an isomorphism because $A$ is finite projective.
+We only sketch the argument. The question is local on $S$, so take $S = \spec R$ and $G = \Spec A$ with $A$ a finite projective $R$-module carrying a commutative and cocommutative Hopf algebra structure. Group homomorphisms $G_T \to \Gm{}_{,T}$ correspond to grouplike elements of $A \otimes_R \cO(T)$, which in turn correspond to $R$-algebra maps $A^\vee \to \cO(T)$, where $A^\vee = \Hom_R(A,R)$ carries the dual Hopf algebra structure. Hence $G^D = \Spec A^\vee$, and $A \to A^{\vee\vee}$ is an isomorphism because $A$ is finite projective.
 :::
 
 ::: {#exm-mu-n}

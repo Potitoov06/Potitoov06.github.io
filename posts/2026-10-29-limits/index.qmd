@@ -1,0 +1,10 @@
+---
+title: I-adic completions 
+subtitle: We use standard material on limits to understand some basic problem about iterated completions
+date: 2026-10-29
+categories: [math, formal]
+---
+
+{{< include /_macros.qmd >}}
+
+We want to answer the following question: If $R$ is any ring and $I=(f_1,\ldots, f_m)$ is a finitely generated ideal in $R$, then is the $I$-adic completion of $R$ the $f_m$-adic completion of $(f_1,\ldots,f_{m-1})$-adic completion of $R$? 

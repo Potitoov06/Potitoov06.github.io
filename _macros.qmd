@@ -116,14 +116,6 @@
 \newcommand{\ft}[1]{#1^{(p)}}
 
 <!-- Kept from the original site macros (no clash with the above) -->
-\newcommand{\Spec}{\operatorname{Spec}}
 \newcommand{\uHom}{\underline{\operatorname{Hom}}}
-\newcommand{\Ext}{\operatorname{Ext}}
-\newcommand{\Gal}{\operatorname{Gal}}
-\newcommand{\cO}{\mathcal{O}}
-\newcommand{\cF}{\mathcal{F}}
-\newcommand{\bZ}{\mathbb{Z}}
-\newcommand{\bQ}{\mathbb{Q}}
-\newcommand{\bF}{\mathbb{F}}
 \newcommand{\Ga}{\mathbb{G}_{\mathrm{a}}}
 \newcommand{\Gm}{\mathbb{G}_{\mathrm{m}}}
